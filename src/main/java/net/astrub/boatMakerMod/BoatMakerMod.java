@@ -1,6 +1,9 @@
 package net.astrub.boatMakerMod;
 
 import com.mojang.logging.LogUtils;
+import net.astrub.boatMakerMod.item.ModCreativeModTabs;
+import net.astrub.boatMakerMod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,8 +31,12 @@ public class BoatMakerMod
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -50,6 +57,10 @@ public class BoatMakerMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.Ansko);
+            event.accept(ModItems.Raw_Sapphire);
+        }
 
     }
 
