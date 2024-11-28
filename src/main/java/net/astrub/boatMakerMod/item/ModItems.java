@@ -13,6 +13,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> Ansko = ITEMS.register("ansko",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> Sapphire = ITEMS.register("sapphire",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> Raw_Sapphire = ITEMS.register("raw_sapphire",
             () -> new Item(new Item.Properties()));
 

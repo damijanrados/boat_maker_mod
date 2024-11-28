@@ -1,6 +1,7 @@
 package net.astrub.boatMakerMod.item;
 
 import net.astrub.boatMakerMod.BoatMakerMod;
+import net.astrub.boatMakerMod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,7 +20,11 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.boat_maker"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.Ansko.get());
+                        output.accept(ModItems.Sapphire.get());
                         output.accept(ModItems.Raw_Sapphire.get());
+                        output.accept(ModBlocks.ANSKO_BLOCK.get());
+                        output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                     })
                     .build());
 

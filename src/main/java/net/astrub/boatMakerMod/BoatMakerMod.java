@@ -1,6 +1,7 @@
 package net.astrub.boatMakerMod;
 
 import com.mojang.logging.LogUtils;
+import net.astrub.boatMakerMod.block.ModBlocks;
 import net.astrub.boatMakerMod.item.ModCreativeModTabs;
 import net.astrub.boatMakerMod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,7 +33,7 @@ public class BoatMakerMod
         IEventBus modEventBus = context.getModEventBus();
 
         ModCreativeModTabs.register(modEventBus);
-
+        ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

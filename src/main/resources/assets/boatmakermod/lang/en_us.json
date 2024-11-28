@@ -1,5 +1,11 @@
 {
-  "item.boatmakermod.ansko": "AnskoLama",
+  "item.boatmakermod.ansko": "Ansko Lama",
   "item.boatmakermod.raw_sapphire": "Raw sapphire",
+  "item.boatmakermod.sapphire": "Sapphire",
+
+  "block.boatmakermod.ansko_block": "Ansko block",
+  "block.boatmakermod.sapphire_block":  "Sapphire Block",
+  "block.boatmakermod.raw_sapphire_block":  "Raw Sapphire Block",
+
   "creativetab.boat_maker": "Ansko predal"
 }
