@@ -7,5 +7,10 @@
   "block.boatmakermod.sapphire_block":  "Sapphire Block",
   "block.boatmakermod.raw_sapphire_block":  "Raw Sapphire Block",
 
+  "block.boatmakermod.sapphire_ore": "Sapphire Ore",
+  "block.boatmakermod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.boatmakermod.end_stone_sapphire_ore": "Endstone Sapphire Ore",
+  "block.boatmakermod.nether_sapphire_ore": "Nether Sapphire Ore",
+
   "creativetab.boat_maker": "Ansko predal"
 }
