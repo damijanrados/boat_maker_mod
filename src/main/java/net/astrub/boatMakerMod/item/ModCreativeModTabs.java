@@ -25,6 +25,7 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.ANSKO_BLOCK.get());
                         output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+                        output.accept(ModItems.METAL_DETECTOR.get());
 
                         output.accept(ModBlocks.SAPPHIRE_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
