@@ -1,6 +1,7 @@
 package net.astrub.boatMakerMod.item;
 
 import net.astrub.boatMakerMod.BoatMakerMod;
+import net.astrub.boatMakerMod.item.costum.FuelItem;
 import net.astrub.boatMakerMod.item.costum.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,6 +21,14 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(100)));
+
+    public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
+            () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
+    public static final RegistryObject<Item> MIA_COKOLADA = ITEMS.register("mia_cokolada",
+            () -> new Item(new Item.Properties().food(ModFoods.MIA_COKOLADA)));
+
+    public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
+            () -> new FuelItem(new Item.Properties(), 400));
 
     public static void register (IEventBus eventBus){
         ITEMS.register(eventBus);
